@@ -596,7 +596,6 @@ export async function syncPlugins(): Promise<SyncResult> {
 	await createManagedSkills({
 		disabledSkills: resolveDisabledSkillIds(),
 	});
-	// The ledger is written by now; the desktop reaches this through the CLI.
 	syncPluginMcpServers();
 
 	const after = new Set(skillDirNames());
