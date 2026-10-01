@@ -77,6 +77,7 @@ export { getCommandShellArgs, getShellArgs, getShellEnv };
 
 export {
 	getAgentSetupTemplatesDir,
+	getBundledMarketplaceDir,
 	setAgentSetupTemplatesDir,
 } from "./config";
 export {
@@ -89,8 +90,10 @@ export {
 	writeSharedDisabledSkillIds,
 } from "./disabled-skills";
 export {
+	type InstalledPluginEntry,
 	installedPluginsFilePath,
 	readInstalledPluginSources,
+	writeInstalledPlugins,
 } from "./installed-plugins";
 export {
 	readExternallyConfiguredMcpServers,
@@ -102,6 +105,10 @@ export {
 	type PluginSkillSource,
 } from "./managed-skills";
 export { getBinDir, resolveSupersetHomeDir } from "./paths";
+export {
+	desiredPluginMcpServers,
+	syncPluginMcpServers,
+} from "./plugin-mcp-servers";
 export {
 	resolveWriteTarget,
 	writeFileIfChanged,
